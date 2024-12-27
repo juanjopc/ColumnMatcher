@@ -24,7 +24,7 @@ ColumnMatcher es una herramienta poderosa que utiliza inteligencia artificial pa
    - Abre el CMD (símbolo del sistema) en tu computadora.
    - Escribe `cd` seguido de la ruta de la carpeta descomprimida. Ejemplo:
      ```
-     cd C:\Users\TuUsuario\Descargas\ColumnMatcher-main
+     cd C:\Users\TuUsuario\Desktop\ColumnMatcher-main
      ```
 
 5. **Instalar los requerimientos:**
