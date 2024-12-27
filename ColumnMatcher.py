@@ -196,15 +196,20 @@ if __name__ == "__main__":
     # Realizar el match
     matches = match_using_gemini(source_data, target_data, source_column_name, target_column_name)
 
+    # Obtén el directorio del script
+    script_directory = os.path.dirname(os.path.abspath(__file__))
+
     # Guardar resultados en un archivo JSON
-    json_output_file = os.path.join(os.getcwd(), "Match.json")
+    json_output_file = os.path.join(script_directory, "ColumnMatcher.json")
     with open(json_output_file, "w", encoding="utf-8") as json_file:
         json.dump(matches, json_file, ensure_ascii=False, indent=4)
 
     print(f"[OK] Se generó el archivo JSON de resultados: {json_output_file}")
 
     # Guardar resultados en un archivo Excel
-    output_file = os.path.join(os.getcwd(), "Match.xlsx")
+    output_file = os.path.join(script_directory, "ColumnMatcher.xlsx")
     pd.DataFrame(matches).to_excel(output_file, index=False)
 
     print(f"[OK] Se generó el archivo de resultados: {output_file}")
+
+    input("Presiona Enter para salir...")
