@@ -36,7 +36,7 @@ ColumnMatcher es una herramienta poderosa que utiliza inteligencia artificial pa
      ```
 
 6. **Ejecutar el script:**
-   - Haz clic derecho sobre el archivo principal del script (por ejemplo, `main.py`).
+   - Haz clic derecho sobre el archivo principal del script (`ColumnMatcher.py`).
    - Selecciona la opción "Ejecutar con Python".
 
 7. **Listo:**
